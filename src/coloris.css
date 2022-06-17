@@ -1,3 +1,8 @@
+/*!
+ * This was modified for use in TorrentBD Theme Engine.
+ * Please visit https://github.com/mdbassit/Coloris for the unmodified version.
+ */
+
 .clr-picker {
   display: none;
   flex-wrap: wrap;
@@ -220,7 +225,8 @@
   top: 0;
   border-radius: inherit;
   background-color: currentColor;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+  /*box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);*/
+  box-shadow: 0 0 0 1px rgba(0,0,0,.1);
 }
 
 input.clr-color {
@@ -233,7 +239,8 @@ input.clr-color {
   border-radius: 16px;
   color: #444;
   background-color: #fff;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: inherit;
   font-size: 14px;
   text-align: center;
   box-shadow: none;
@@ -241,7 +248,8 @@ input.clr-color {
 
 input.clr-color:focus {
   outline: none;
-  border: 1px solid #1e90ff;
+  /*border: 1px solid #1e90ff;*/
+  border: 1px solid var(--engine-accent-color-1);
 }
 
 .clr-clear {
@@ -304,8 +312,11 @@ input.clr-color:focus {
 
 .clr-field button {
   position: absolute;
-  width: 30px;
-  height: 100%;
+  /*width: 30px;*/
+  width: 1.75rem;
+  /*height: 100%;*/
+  height: 1.75rem;
+  margin-right: 1rem;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -327,9 +338,10 @@ input.clr-color:focus {
   top: 0;
   border-radius: inherit;
   background-color: currentColor;
-  box-shadow: inset 0 0 1px rgba(0,0,0,.5);
+  /*box-shadow: inset 0 0 1px rgba(0,0,0,.5);*/
 }
 
+/*
 .clr-alpha,
 .clr-alpha div,
 .clr-swatches button,
@@ -339,6 +351,7 @@ input.clr-color:focus {
   background-position: 0 0, 4px 4px;
   background-size: 8px 8px;
 }
+*/
 
 .clr-marker:focus {
   outline: none;
@@ -379,7 +392,8 @@ input.clr-color:focus {
 }
 
 .clr-dark .clr-swatches button:after {
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.3);
+  /* box-shadow: inset 0 0 0 1px rgba(255,255,255,.3); */
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3);
 }
 
 .clr-dark input.clr-color {
@@ -389,7 +403,8 @@ input.clr-color:focus {
 }
 
 .clr-dark input.clr-color:focus {
-  border-color: #1e90ff;
+  /*border: 1px solid #1e90ff;*/
+  border: 1px solid var(--engine-accent-color-1);
 }
 
 .clr-dark .clr-preview:after {
